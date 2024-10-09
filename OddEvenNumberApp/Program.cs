@@ -24,30 +24,9 @@ void printnumber( string title , IEnumerable<int> number)
 
 }
 
-bool Iseven (int number)
-{
-	if (number % 2 == 0)
-	{
-		return true;
-	}
-	else
-	{
-        return false;
+bool Iseven(int number) => number % 2 == 0;
 
-    }
-}
 
-bool Isodd(int number)
-{
-    if (number % 2 != 0)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-
-    }
-}
-
+bool Isodd(int number) => !Iseven(number);
+ 
 Console.ReadKey();
